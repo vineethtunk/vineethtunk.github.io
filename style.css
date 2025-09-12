@@ -1265,6 +1265,206 @@ body {
     font-weight: var(--font-weight-medium);
 }
 
+.projects, .blogs {
+  padding: 80px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-item, .blog-card {
+  background: var(--color-background);
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.project-item h3, .blog-card h3 {
+  margin-bottom: 12px;
+  color: var(--color-text);
+}
+
+.blog-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-card p {
+  color: var(--color-text-secondary);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 0;
+    background-color: var(--color-surface);
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-16);
+    color: var(--color-text);
+}
+
+.testimonials p.subtitle {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-40);
+}
+
+.testimonial-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-24);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: var(--color-background);
+    padding: var(--space-24);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-card-border);
+    box-shadow: var(--shadow-sm);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: var(--space-16);
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-16);
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.testimonial-role {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+/* Testimonial Submit Section */
+.testimonial-submit {
+    padding: 80px 0;
+    background-color: var(--color-surface);
+    text-align: center;
+}
+
+.testimonial-submit h2 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-24);
+    color: var(--color-text);
+}
+
+.testimonial-submit form {
+    background-color: var(--color-background);
+    padding: var(--space-32);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-card-border);
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-16);
+}
+
+.testimonial-submit .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+}
+
+.testimonial-submit input,
+.testimonial-submit textarea {
+    width: 100%;
+    padding: var(--space-12);
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--radius-base);
+    font-size: var(--font-size-base);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    transition: border-color 0.3s ease;
+}
+
+.testimonial-submit input:focus,
+.testimonial-submit textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.2);
+}
+
+.testimonial-form {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: var(--color-background);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.testimonial-form h2 {
+  margin-bottom: 20px;
+  color: var(--color-text);
+}
+
+.testimonial-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.testimonial-form input,
+.testimonial-form textarea {
+  padding: 12px;
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-base);
+  font-size: 14px;
+  width: 100%;
+}
+
+.testimonial-form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.testimonial-form button {
+  background-color: var(--color-primary);
+  color: var(--color-btn-primary-text);
+  border: none;
+  padding: 12px 24px;
+  border-radius: var(--radius-base);
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.testimonial-form button:hover {
+  transform: scale(1.05);
+}
+
+
 /* Contact Section */
 .contact {
     padding: 100px 0;
@@ -1351,6 +1551,65 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-16);
 }
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+}
+
+.contact-form label {
+    font-weight: 600;
+    color: var(--color-text);
+    font-size: var(--font-size-sm);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: var(--space-12);
+    border: 1px solid var(--color-card-border);
+    border-radius: var(--radius-base);
+    font-size: var(--font-size-base);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+.contact-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+    margin-bottom: var(--space-16);
+}
+
+.contact-form .form-row .full-width {
+    grid-column: span 2;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: var(--color-primary);
+    color: var(--color-btn-primary-text);
+    border: none;
+    padding: var(--space-12) var(--space-24);
+    border-radius: var(--radius-base);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background var(--duration-fast) var(--ease-standard);
+}
+
+.btn-submit:hover {
+    background-color: var(--color-primary-hover, #005f8a);
+}
+
 
 /* Footer */
 .footer {
