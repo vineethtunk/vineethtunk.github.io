@@ -89,11 +89,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Typing Animation
     function typeWriter() {
         const roles = [
-            'Cybersecurity Professional',
+            'Managed Security Services Engineer',
+			'Cybersecurity Professional',
             'Application Security Analyst',
-            'Penetration Testing Expert',
-            'Security Researcher',
-            'VAPT Specialist'
+            'Security Engineer',
+            'Infosec Content Writer'
         ];
         
         let roleIndex = 0;
