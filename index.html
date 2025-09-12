@@ -11,7 +11,7 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
+        <div class="nav-container">	
             <div class="nav-logo">
                 <a href="#home">Vineeth Tunk</a>
             </div>
@@ -314,6 +314,30 @@
         </div>
     </section>
 
+<!-- Testimonial Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What People Say</h2>
+                <p class="section-subtitle">Feedback from clients and peers</p>
+            </div>
+            <div class="testimonials-content">
+                <div class="testimonial-item">
+                    <p>"Vineeth helped secure our web applications with precision. His expertise in WAF saved us from potential threats."</p>
+                    <h4>- Client A, CTO</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"I’ve seen Vineeth bridge the gap between developers and security teams seamlessly. He makes security actionable."</p>
+                    <h4>- Client B, Security Manager</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"One of the sharpest cybersecurity professionals I’ve worked with. Highly recommend his consultation."</p>
+                    <h4>- Client C, Founder</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -322,6 +346,7 @@
                 <p class="section-subtitle">Let's discuss cybersecurity solutions for your organization</p>
             </div>
             <div class="contact-content">
+                <!-- Left Column -->
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
@@ -345,16 +370,77 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" target="_blank" class="social-link">
+                        <a href="https://www.linkedin.com/in/vineethtunk/" target="_blank" class="social-link">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="#" target="_blank" class="social-link">
+                        <a href="https://github.com/vineethtunk" target="_blank" class="social-link">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="#" target="_blank" class="social-link">
+                        <a href="https://x.com/TunkVineeth" target="_blank" class="social-link">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </div>
+                </div>
+
+                <!-- Right Column (Contact Form placeholder if needed) -->
+                <div class="contact-form">
+                    <form 
+    action="https://formspree.io/f/sss" 
+    method="POST" 
+    class="contact-form" 
+    autocomplete="off" 
+    novalidate
+>
+    <label for="name">Full Name</label>
+    <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        placeholder="Enter your full name" 
+        required 
+        minlength="2" 
+        maxlength="100"
+    >
+
+    <label for="email">Email Address</label>
+    <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Enter your email" 
+        required 
+        maxlength="150"
+        inputmode="email"
+    >
+
+    <label for="phone">Mobile Number</label>
+    <input 
+        type="tel" 
+        id="phone" 
+        name="phone" 
+        placeholder="Enter your mobile number" 
+        pattern="^\+?[0-9]{10,15}$" 
+        required 
+        inputmode="tel"
+    >
+
+    <label for="message">Your Message</label>
+    <textarea 
+        id="message" 
+        name="message" 
+        rows="5" 
+        placeholder="How can I help secure your applications or infrastructure?" 
+        required 
+        minlength="10" 
+        maxlength="1000"
+    ></textarea>
+
+    <!-- Hidden honeypot field for spam bots -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <button type="submit">Send Message</button>
+</form>
+
                 </div>
             </div>
         </div>
