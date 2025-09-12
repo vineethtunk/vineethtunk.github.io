@@ -309,34 +309,78 @@
                             <strong>Impact:</strong> Automated 70% of routine security tasks.
                         </div>
                     </div>
+					
                 </div>
             </div>
         </div>
     </section>
+	<section id="projects" class="projects">
+  <h2>My Web Application Projects</h2>
+  <div class="project-list">
+    <!-- Project 1 -->
+    <div class="project-item">
+      <h3>Project 1: App Security Dashboard</h3>
+      <iframe src="projects/project1/index.html" width="100%" height="500" frameborder="0"></iframe>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-item">
+      <h3>Project 2: Secure API Monitor</h3>
+      <iframe src="projects/project2/index.html" width="100%" height="500" frameborder="0"></iframe>
+    </div>
+  </div>
+</section>
 
 <!-- Testimonial Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">What People Say</h2>
-                <p class="section-subtitle">Feedback from clients and peers</p>
-            </div>
-            <div class="testimonials-content">
-                <div class="testimonial-item">
-                    <p>"Vineeth helped secure our web applications with precision. His expertise in WAF saved us from potential threats."</p>
-                    <h4>- Client A, CTO</h4>
-                </div>
-                <div class="testimonial-item">
-                    <p>"I’ve seen Vineeth bridge the gap between developers and security teams seamlessly. He makes security actionable."</p>
-                    <h4>- Client B, Security Manager</h4>
-                </div>
-                <div class="testimonial-item">
-                    <p>"One of the sharpest cybersecurity professionals I’ve worked with. Highly recommend his consultation."</p>
-                    <h4>- Client C, Founder</h4>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="testimonials">
+  <h2>What People Say</h2>
+  <p class="subtitle">Feedback from clients and peers</p>
+
+  <div class="testimonial-list">
+    <div class="testimonial-card">
+      <i class="fas fa-shield-alt"></i>
+      <p class="testimonial-text">
+        "Vineeth helped secure our web applications with precision. His expertise in WAF saved us from potential threats."
+      </p>
+      <p class="testimonial-author">CTO</p>
+      <p class="testimonial-role">SaaS Startup (India)</p>
+    </div>
+
+    <div class="testimonial-card">
+      <i class="fas fa-lock"></i>
+      <p class="testimonial-text">
+        "I’ve seen Vineeth bridge the gap between developers and security teams seamlessly. He makes security actionable."
+      </p>
+      <p class="testimonial-author">IT-Security Manager</p>
+      <p class="testimonial-role">Insurance Company</p>
+    </div>
+
+    <div class="testimonial-card">
+      <i class="fas fa-laptop-code"></i>
+      <p class="testimonial-text">
+        "One of the best cybersecurity professionals I’ve worked with. Highly recommend his consultation."
+      </p>
+      <p class="testimonial-author">Founder</p>
+      <p class="testimonial-role">E-commerce Platform</p>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-form">
+  <h2>Share Your Feedback</h2>
+  <form action="https://formspree.io/f/xjkezrov" method="POST">
+    <div class="form-row">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="role" placeholder="Your Role (e.g., CTO, Manager)" required>
+    </div>
+    <div class="form-row">
+      <textarea name="testimonial" placeholder="Your Testimonial" required></textarea>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</section>
+
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -379,67 +423,41 @@
                         <a href="https://x.com/TunkVineeth" target="_blank" class="social-link">
                             <i class="fab fa-twitter"></i>
                         </a>
+						<a href="https://vineethtunk.medium.com/" target="_blank" class="social-link">
+                            <i class="fab fa-medium"></i>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Right Column (Contact Form placeholder if needed) -->
                 <div class="contact-form">
-                    <form 
-    action="https://formspree.io/f/sss" 
-    method="POST" 
-    class="contact-form" 
-    autocomplete="off" 
-    novalidate
->
-    <label for="name">Full Name</label>
-    <input 
-        type="text" 
-        id="name" 
-        name="name" 
-        placeholder="Enter your full name" 
-        required 
-        minlength="2" 
-        maxlength="100"
-    >
+                    <form action="https://formspree.io/f/movnbwjy" method="POST" class="contact-form">
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
 
-    <label for="email">Email Address</label>
-    <input 
-        type="email" 
-        id="email" 
-        name="email" 
-        placeholder="Enter your email" 
-        required 
-        maxlength="150"
-        inputmode="email"
-    >
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
 
-    <label for="phone">Mobile Number</label>
-    <input 
-        type="tel" 
-        id="phone" 
-        name="phone" 
-        placeholder="Enter your mobile number" 
-        pattern="^\+?[0-9]{10,15}$" 
-        required 
-        inputmode="tel"
-    >
+    <div class="form-group">
+        <label for="phone">Mobile Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" pattern="^\+?[0-9]{10,15}$" required>
+    </div>
 
-    <label for="message">Your Message</label>
-    <textarea 
-        id="message" 
-        name="message" 
-        rows="5" 
-        placeholder="How can I help secure your applications or infrastructure?" 
-        required 
-        minlength="10" 
-        maxlength="1000"
-    ></textarea>
+    <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="How can I help secure your applications or infrastructure?" required></textarea>
+    </div>
 
-    <!-- Hidden honeypot field for spam bots -->
+    <!-- Honeypot -->
     <input type="text" name="_gotcha" style="display:none">
 
-    <button type="submit">Send Message</button>
+    <button type="submit" class="btn-submit">Send Message</button>
 </form>
+
 
                 </div>
             </div>
